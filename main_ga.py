@@ -55,7 +55,7 @@ if __name__ == "__main__":
     )
 
     
-    cost_time = 60
+    cost_time = 300
     ga_time= int(cost_time/60)
     res_nsga2 = minimize(problem, algorithm, termination=("time", f"00:0{ga_time}:00"), seed=1, verbose=False)
     #random_fitness = random_search(problem, pop_size)
@@ -90,6 +90,7 @@ if __name__ == "__main__":
             selected_tests_data[run_key][test_id] = test_objects[(run_key, test_id)]
     #print("Tests sélectionnés pour maximiser la diversité :")
     #print(selected_tests_data)
+    print("******************* STARTING RANDOM SEARCH *******************")
     random_fitness = random_search(test_data = test_data, n_samples=pop_size, cost_time=cost_time)
     random_fitness = np.abs(random_fitness)
     # Afficher les résultats
