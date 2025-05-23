@@ -19,13 +19,14 @@ def extract_features(test_data):
     Transforme un test en un vecteur exploitable pour la distance cosinus.
     On utilise les positions et rotations des objets du test.
     """
+    fitness = test_data["fitness"]
     vector = []
     for obj in test_data["test"][0]: 
         position = obj[0] 
         rotation = obj[1] 
         vector.extend(position + rotation) 
     #print("Vecteur extrait :", vector)
-    return np.array(vector)
+    return np.array(vector), fitness
 
 def test_prioritization(test_accounts):
     
