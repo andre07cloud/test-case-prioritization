@@ -38,5 +38,5 @@ def compute_diversity(candidate_order):
         #cosine distance between ti and ti-1
         distance = cosine_distances(test_i, test_i_1)
         total += distance / i
-    
+    #mAd = total / n
     return total

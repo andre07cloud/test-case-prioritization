@@ -1,0 +1,17 @@
+
+scene_features: "/home/andre/My-PHD/Poly/test-case-prioritization/collected_data/all_stats_05_nov_uc1_2woods.json"
+data_images: "/home/andre/My-PHD/Poly/test-case-prioritization/collected_data/all_stats_05_nov_uc1_2woods"
+data_labels: "/home/andre/My-PHD/Poly/test-case-prioritization/collected_data/all_stats_05_nov_uc1_2woods"
+
+best_model: "/home/andre/My-PHD/Poly/test-case-prioritization/train_results/uc1/train_results_uc15/weights/best.pt"
+test_images: "/home/andre/My-PHD/Poly/test-case-prioritization/data/tests/images"
+test_labels: "/home/andre/My-PHD/Poly/test-case-prioritization/data/tests/labels"
+difficulty_levels:
+  - level_1: "/home/andre/My-PHD/Poly/test-case-prioritization/diverse_files_ann/diversify_ANN_level_1.csv"
+  - level_2: "/home/andre/My-PHD/Poly/test-case-prioritization/diverse_files_ann/diversify_ANN_level_2.csv"
+  - level_3: "/home/andre/My-PHD/Poly/test-case-prioritization/diverse_files_ann/diversify_ANN_level_3.csv"
+  - level_4: "/home/andre/My-PHD/Poly/test-case-prioritization/diverse_files_ann/diversify_ANN_level_4.csv" 
+
+master_json_path: '/home/andre/My-PHD/Poly/test-case-prioritization/collected_data/all_stats_05_nov_uc1_2woods.json'
+main_output_folder: "test_manual_analysis"
+collected_file_folder: "/home/andre/My-PHD/Poly/test-case-prioritization/collected_data/all_stats_05_nov_uc1_2woods"

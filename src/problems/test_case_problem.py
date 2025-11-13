@@ -17,12 +17,13 @@ class TestCasePrioritizationProblem(Problem):
         
 
     def _evaluate(self, X, out, *args, **kwargs):
+ 
         f1_list, f2_list = [], []
         for candidate in X:
             
             candidate_order = [self.test_cases_data[i] for i in candidate]
             #print("Candidate order len:", len(candidate_order))
-            print("Candidate:", candidate)
+            #print("Candidate:", candidate)
             #vision_complexity = - fitness_vison_complexity(candidate_order)
             test_fitness = [item[1] for item in candidate_order]
             fit1 = np.mean(test_fitness)
